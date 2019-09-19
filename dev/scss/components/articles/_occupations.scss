@@ -1,0 +1,56 @@
+.occupations {
+    margin-bottom: 1rem;
+
+    &__header {
+        @extend .heading;
+        margin-top: 6rem;
+    }
+
+    & .right-article {
+        margin-top: 8rem;
+    }
+
+    & .left-article {
+        margin-top: 10rem;
+    }
+
+    &__line {
+        @extend .line--left, .line--shifted;
+    }
+
+    &__text {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    &__sub-header {
+        @extend .heading--bold;
+    }
+}
+
+@media (max-width: $breakpoint-lg) {
+    .occupations {
+        &__sub-header {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-sm - 1px) {
+    .occupations {
+        text-align: center;
+        font-size: 1.7rem;
+
+        &__line {
+            float: none;
+        }
+
+        &__text {
+            margin-top: $spacing-xs;
+        }
+
+        .left-article {
+            margin-top: 6rem;
+        }
+    }
+}

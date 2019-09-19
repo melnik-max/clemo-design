@@ -1,0 +1,124 @@
+.reviews {
+    margin-top: 7.5rem;
+    color: black;
+
+    &__header {
+        @extend .heading;
+        margin-left: 1rem;
+    }
+
+    .reviews__dots {
+        @extend .carousel__dots;
+    }
+}
+
+.testimonial {
+    &__slider {
+        margin-top: 6.5rem;
+    }
+
+    &__images {
+        margin-top: 6.4rem;
+        margin-bottom: 8.5rem;
+    }
+
+    &__comment {
+        margin-top: 1rem;
+        padding-left: 6.5%;
+    }
+
+    &__img {
+        @extend .img--fluid;
+        margin-right: $spacing-xs;
+    }
+}
+
+.cite {
+    margin-left: 20.5%;
+
+    * {
+        float: right;
+    }
+
+    &__line {
+        @extend .line;
+        margin-top: 0.5rem;
+    }
+
+    &__name {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    &__position {
+        margin-top: 1em;
+        margin-right: -5.5rem;
+    }
+}
+
+@media (max-width: $breakpoint-sm - 1px) {
+    .reviews__dots {
+        position: relative;
+        bottom: 73rem;
+    }
+
+    .testimonial__images {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: $breakpoint-md - 1px) {
+    .testimonial__img {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: $breakpoint-lg) {
+    .cite * {
+        float: none;
+    }
+
+    .cite__position {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: $breakpoint-lg) {
+    .testimonial {
+        &__comment {
+            margin-top: $spacing-sm;
+            margin-left: 2.6rem;
+        }
+
+        &__img {
+            margin-right: 0;
+        }
+
+        &__images {
+            text-align: center;
+        }
+    }
+
+    .cite {
+        &__line, &__position {
+            float: left;
+        }
+
+        &__position {
+            margin-left: -5.5rem;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-xl) {
+    .cite__name {
+        margin-top: 0.5rem;
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    .cite__name {
+        margin-top: 3.5rem;
+    }
+}

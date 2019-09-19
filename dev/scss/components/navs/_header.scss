@@ -1,0 +1,36 @@
+.logo {
+    margin-left: -1.5rem;
+    font-size: 3.0rem;
+    font-weight: 800;
+    color: black;
+}
+
+.nav-link {
+    margin-left: 2.8rem;
+    &:hover {
+        @extend %half-border-bottom;
+    }
+}
+
+.navbar-nav {
+    margin-right: -1rem;
+    a {
+        @extend .nav-link;
+        color: $base-text-color;
+    }
+}
+
+%half-border-bottom {
+    padding-bottom: 3.5rem;
+    background: linear-gradient(black, black) left no-repeat;
+    background-size: 55% 0.3rem;
+}
+
+.works-page .works-page-link,
+.about-page .about-page-link,
+.services-page .services-page-link,
+.blog-page .blog-page-link,
+.contact-us-page .contact-page-link {
+    @extend %half-border-bottom;
+}
+

@@ -1,0 +1,38 @@
+.related-items {
+    color: black;
+    margin-top: $spacing-xl;
+    padding-bottom: 9rem;
+    background-color: $beige;
+
+    &__header {
+        @extend .heading;
+        margin-left: 0.7rem;
+        margin-top: 7.5rem;
+        margin-bottom: $spacing-xs;
+    }
+}
+
+.item {
+    margin-top: 1rem;
+    margin-bottom: $spacing-sm;
+    margin-left: 0.1rem;
+
+    &__header {
+        line-height: 3.7rem;
+        margin-top: 4.2rem;
+        font-size: 3.6rem;
+        font-weight: $article-header-font-weight;
+    }
+
+    &__line {
+        @extend .line--left;
+        margin-top: 1rem;
+    }
+
+    &__footer {
+        float: left;
+        margin-top: $spacing-xs;
+        margin-left: -5.5rem;
+    }
+}
+

@@ -1,0 +1,42 @@
+%btn {
+    font-size: $base-font-size;
+    padding: $btn-padding;
+    border-radius: $btn-border-radius;
+    border: 0.1rem solid transparent;
+    font-weight: 500;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.btn--white {
+    @extend %btn;
+    color: black;
+    border-color: $light-grey;
+    padding: 1.3rem 3.6rem;
+    &:hover {
+        background-color: $btn-hover-color;
+        border-color: black;
+    }
+}
+
+.btn--black {
+    @extend %btn;
+    color: white;
+    font-size: 1.9rem;
+    font-weight: normal;
+    background-color: black;
+    border-color: black;
+    border-radius: $btn-border-radius;
+    &:hover {
+        color: black;
+        border-color: $orange;
+        background-color: $orange;
+    }
+
+    & a {
+        color: white;
+    }
+}
+

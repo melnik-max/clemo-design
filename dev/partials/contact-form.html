@@ -1,0 +1,66 @@
+<section class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 id="contact-header" class="contact__header">get in touch</h3>
+
+                <div class="contact__body row">
+                    <address class="contact__info col-sm-6 col-xs-12">
+                        <ul class="address">
+                            <li class="address__hookup">
+                                <img id="geo" class="address__icon" src="img/geo.png" alt="geo">
+                                <span class="address__details">
+                                    23 Mulholland Drive, Suite 721. Los Angeles 10010100 S. Main Street. Los Angeles 90012
+                                </span>
+                            </li>
+
+                            <li class="address__hookup">
+                                <img id="phone" class="address__icon" src="img/phone.png" alt="phone">
+                                <span class="address__details">+1-670-567-5590</span>
+                            </li>
+
+                            <li class="address__hookup">
+                                <img id="mail" class="address__icon" src="img/mail.png" alt="mail">
+                                <span class="address__details">hello@clemocreative.com</span>
+                            </li>
+                        </ul>
+
+                        <div class="contact__social">
+                            //= social.html
+                            <i class="fa fa-instagram"></i>
+                        </div>
+
+                    </address>
+
+                    <form action="#" autocomplete="off" id="contact-form" class="form col-sm-5 col-xs-12">
+                        <div class="form__name">
+                            <label class="form__label" for="name">name</label>
+                            <input type="text" class="form__input-name" name="name" id="name" required>
+                        </div>
+
+                        <div class="form__email">
+                            <label class="form__label" for="email">e-mail</label>
+                            <input type="email" class="form__input-email" name="email" id="email" required>
+                        </div>
+
+                        <div class="form__message">
+                            <label class="form__label" for="message">your message</label>
+                            <textarea class="form__textarea-message" name="message" id="message" rows="3"></textarea>
+                        </div>
+
+                        <div class="form__submit-btn--center">
+                            <input type="submit" id="contact-submit-btn" class="form__submit-btn" value="submit">
+                        </div>
+                    </form>
+
+                    <div id="message-box" class="message-box hidden col-sm-6 col-xs-12">
+                        <img id="check" class="message-box__img" src="img/check.png" alt="checked">
+                        <h3 class="message-box__text">Thank you! <br> Your message has been sent!</h3>
+                        <button type="button" id="message-box-btn" class="message-box__btn">new message</button>
+                    </div>
+                </div><!-- /.contact-body -->
+
+            </div><!-- /.col-sm-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.contact -->

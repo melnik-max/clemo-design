@@ -1,0 +1,31 @@
+$contactThemes: (
+        'dark': (
+                headerMarginTop: 7.5rem,
+
+                textColor: white,
+                bgColor: black,
+
+                fieldFocus: 0.1rem solid white,
+                fieldTextColor: white,
+
+                messageBtnColor: $orange,
+        ),
+        'light': (
+                headerMarginTop: -2.5rem,
+
+                hoverColor: $btn-hover-color,
+                btnColor: black,
+                btnTextColor: white,
+                btnHoverTextColor: black,
+
+                fieldFocus: 0.1rem solid black,
+                fieldTextColor: black,
+
+                iconColor: white,
+                iconBgColor: black,
+
+                messageBtnColor: $btn-hover-color,
+                messageBtnBorderColor: black,
+                messageTextColor: black
+        )
+) !default;

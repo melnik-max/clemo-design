@@ -1,0 +1,25 @@
+.images-row {
+    &__header {
+        @extend .heading;
+        margin-top: $spacing-lg;
+        margin-bottom: 7.8rem;
+    }
+
+    &__box {
+        text-align: center;
+    }
+
+    &__item {
+        @extend .img--fluid;
+        margin-right: 0.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__btn {
+        @extend .btn--white;
+        margin-top: $spacing-sm;
+        margin-bottom: -0.5rem;
+        padding-left: $spacing-md;
+        padding-right: $spacing-md;
+    }
+}

@@ -1,0 +1,20 @@
+.line {
+    width: 5.5rem;
+    height: 0.2rem;
+    background-color: black;
+}
+
+.line--left {
+    @extend .line;
+    float: left;
+}
+
+.line--right {
+    @extend .line;
+    float: right;
+}
+
+.line--shifted {
+    @extend .line;
+    margin-top: $spacing-xs;
+}

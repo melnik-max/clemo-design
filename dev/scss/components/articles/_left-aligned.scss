@@ -1,0 +1,81 @@
+.left-article {
+    margin-top: 9rem;
+    margin-left: -2rem;
+
+    &__img {
+        @extend .img--fluid;
+        margin-top: 1rem;
+        float: right;
+    }
+
+    &__date {
+        display: block;
+        color: black;
+        margin-top: -1.4rem;
+    }
+
+    &__text {
+        margin-top: 8.6rem;
+        margin-bottom: 5.5rem;
+    }
+
+    &__btn {
+        @extend .btn--white;
+        margin-top: 3.2rem;
+    }
+
+    &__header {
+        color: black;
+        margin-bottom: 3.5rem;
+        margin-top: 0.5rem;
+        line-height: 4.5rem;
+        font-weight: $article-header-font-weight;
+        font-size: 4.5rem;
+        a:hover {
+            cursor: pointer;
+            color: $link-hover-color;
+        }
+    }
+
+    &__line {
+        @extend .line--left;
+        margin-top: $spacing-sm;
+    }
+}
+
+@media (max-width: $breakpoint-lg) {
+    .left-article {
+        &__header {
+            font-size: 4rem;
+        }
+
+        &__info {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-sm - 1) {
+    .left-article {
+        margin-top: 6rem;
+
+        &__text {
+            margin-top: 0;
+        }
+
+        &__info {
+            margin-bottom: $spacing-xs;
+        }
+
+        &__line {
+            margin-top: $spacing-xs;
+            float: none;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
+    .left-article {
+        margin-left: 3rem;
+    }
+}

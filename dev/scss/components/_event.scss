@@ -1,0 +1,36 @@
+.event {
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    margin-bottom: -0.5rem;
+    text-align: center;
+
+    &__name {
+        color: #8E8E8E;
+    }
+
+    &__price {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    &__line {
+        margin-right: $spacing-sm;
+        margin-left: $spacing-sm;
+    }
+
+    &__btn {
+        @extend .btn--white;
+        background-color: white;
+    }
+}
+
+@media (max-width: $breakpoint-sm - 1) {
+    .event {
+        &__info {
+            margin-bottom: $spacing-sm;
+        }
+    }
+}

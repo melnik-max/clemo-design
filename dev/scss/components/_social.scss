@@ -1,0 +1,15 @@
+.fa {
+    font-size: 1.1em;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    line-height: 2em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $btn-hover-color;
+    }
+}

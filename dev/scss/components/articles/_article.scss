@@ -1,0 +1,44 @@
+.article {
+    &__line {
+        @extend .line--left;
+        margin-top: 9.5rem;
+    }
+
+    &__text {
+        margin-top: 14rem;
+    }
+
+    &__header {
+        @extend .heading;
+        margin-top: 6.6rem;
+        line-height: 7rem;
+    }
+
+    &__social {
+        margin-top: -1rem;
+        .fa {
+            margin-top: 8.8rem;
+            margin-right: 1.7rem;
+        }
+    }
+
+}
+
+.article--shifted > * {
+    margin-left: -3rem;
+}
+
+.article--shifted {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: $breakpoint-sm - 1) {
+    .article__header {
+        text-align: center;
+    }
+
+    .article--shifted > * {
+        margin-left: 1.5rem;
+    }
+}
+

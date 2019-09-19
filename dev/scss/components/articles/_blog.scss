@@ -1,0 +1,40 @@
+.product {
+    font-size: $base-font-size;
+    margin-top: 7rem;
+    margin-bottom: -1rem;
+
+    &__slider, &__controls {
+        text-align: center;
+    }
+
+    &__slider {
+        margin-top: 1rem;
+    }
+
+    &__controls {
+        margin-top: 7rem;
+        .prev {
+            margin-right: $spacing-xs;
+        }
+    }
+
+    &__controls *:hover {
+        cursor: pointer;
+    }
+
+    &__nav {
+        & .tns-nav-active {
+            background-color: black;
+        }
+    }
+
+    .slider-image {
+        @extend .img--fluid;
+        margin-top: $spacing-lg;
+        margin-bottom: 4.5rem;
+    }
+
+    &__pages-counter {
+        margin-left: $spacing-sm;
+    }
+}

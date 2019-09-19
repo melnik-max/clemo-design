@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    //= partials/head.html
+    <title>Index</title>
+</head>
+<body>
+//= partials/header.html
+
+<div class="container">
+    <div class="row">
+        <section class="col-sm-12">
+
+            <div id="jumbotron-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    //= partials/carousel/hero.html
+                    //= partials/carousel/hero.html
+                    //= partials/carousel/hero.html
+                </div>
+
+                <div class="carousel-vertical__dots carousel-indicators d-none d-sm-block">
+                    <span class="dot active" data-target="#jumbotron-carousel" data-slide-to="0"></span>
+                    <span class="dot" data-target="#jumbotron-carousel" data-slide-to="1"></span>
+                    <span class="dot" data-target="#jumbotron-carousel" data-slide-to="2"></span>
+                </div>
+            </div>
+
+            <section class="occupations">
+                <h3 class="occupations__header">what we do?</h3>
+                //= partials/articles/services.html
+            </section>
+
+            <section class="img-grid">
+                <h3 class="img-grid__header">our best work</h3>
+
+                <div class="img-grid__images row">
+                    //= partials/images-grid.html
+                </div>
+
+                <div class="img-grid__btn-wrapper">
+                    <a href="works.html" class="btn--black">learn more</a>
+                </div>
+            </section>
+
+        </section><!-- /.col-sm-12 -->
+    </div><!-- /.row -->
+</div><!-- /.container -->
+
+//= partials/team.html
+
+//= partials/reviews.html
+
+<div class="contact--dark">
+    //= partials/contact-form.html
+</div>
+
+//= partials/footer.html
+
+</body>
+</html>

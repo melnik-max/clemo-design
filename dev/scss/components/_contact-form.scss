@@ -1,0 +1,242 @@
+.contact {
+    @include themify($contactThemes) {
+        color: themed('textColor');
+        background-color: themed('bgColor');
+    }
+    margin-top: $spacing-xl;
+    padding-bottom: $spacing-xl;
+
+    &__header {
+        @extend .heading;
+
+        @include themify($contactThemes) {
+            margin-top: themed('headerMarginTop');
+        }
+    }
+
+    &__info {
+        margin-left: -0.5rem;
+    }
+
+    &__body {
+        margin-top: 7.5rem;
+    }
+
+    &__social .fa {
+        margin-top: 3.4rem;
+        margin-right: 1.6rem;
+        background-color: white;
+        color: black;
+        &:hover {
+            background-color: $btn-hover-color;
+        }
+    }
+}
+
+.form {
+    &__label {
+        color: $grey;
+    }
+
+    &__submit-btn {
+        @extend .btn--white;
+        background-color: white;
+        margin-top: $spacing-sm;
+        padding: 1.2rem 5.4rem;
+
+        @include themify($contactThemes) {
+            color: themed('btnTextColor');
+            background-color: themed('btnColor');
+        }
+
+        &:hover {
+            border-color: $orange;
+            background-color: $orange;
+            color: black;
+        }
+    }
+
+    &__field {
+        @include themify($contactThemes) {
+            color: themed('fieldTextColor');
+        }
+        border: none;
+        border-top: 0.1rem solid #333333;
+        color: white;
+
+        &:focus {
+            font-size: 1.9rem;
+            padding-left: 0;
+            border: none;
+            border-top: 0.1rem solid transparent;
+            outline: none;
+            @include themify($contactThemes) {
+                border-bottom: themed('fieldFocus');
+            }
+        }
+    }
+
+    &__input-name, &__input-email, &__textarea-message {
+        @extend .form__field, %form-control;
+    }
+
+    &__input-name:focus, &__input-email:focus {
+        margin-top: -2rem;
+        margin-bottom: 3.5rem;
+        border-bottom: 0.1rem solid white;
+    }
+
+    &__textarea-message:focus {
+        margin-top: 0;
+    }
+
+    &__input-name, &__input-email {
+        height: 5rem;
+    }
+
+    &__textarea-message {
+        border-bottom: 0.1rem solid #333333;
+    }
+
+    &__textarea-message:focus {
+        border: none;
+        border-color: transparent;
+        border-bottom: 0.1rem solid white;
+    }
+}
+
+.address {
+    padding-left: 0;
+    list-style: none;
+
+    &__hookup {
+        overflow: hidden;
+        margin-top: 3.5rem;
+    }
+
+    & li:first-of-type {
+        margin-top: 0;
+    }
+
+    &__icon {
+        margin-right: 1.5rem;
+    }
+
+    &__icon {
+        margin-right: 1.5rem;
+        margin-top: 0.5rem;
+        float: left;
+    }
+
+    &__details {
+        font-weight: 500;
+        float: left;
+        width: 83%;
+    }
+}
+
+.message-box {
+    &__text {
+        margin-top: 2.5rem;
+        line-height: 4.5rem;
+        font-size: 3rem;
+        @include themify($contactThemes) {
+            color: themed('messageTextColor');
+        }
+    }
+
+    &__img {
+        margin-left: 3.7rem;
+    }
+
+    &__btn {
+        @extend .btn--white;
+        margin-top: 3.7rem;
+        padding: 1rem 2.5rem;
+        background-color: white;
+        &:hover {
+            @include themify($contactThemes) {
+                background-color: themed('messageBtnColor');
+                border: 0.1rem solid themed('messageBtnBorderColor');
+            }
+        }
+    }
+}
+
+.contact__social {
+    margin-top: 1rem;
+    .fa {
+        @include themify($contactThemes) {
+            color: themed('iconColor');
+            background-color: themed('iconBgColor');
+        }
+        &:hover {
+            @include themify($contactThemes) {
+                background-color: themed('hoverColor');
+            }
+        }
+    }
+}
+
+.fa-mobile, .fa-map-marker {
+    font-size: 1.3em;
+}
+
+.iframe {
+    filter: grayscale(100%);
+    margin-bottom: -1.6rem;
+}
+
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1px) {
+    .contact__info {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: $breakpoint-md - 1px) {
+    .contact__social .fa {
+        margin-right: 0.8rem;
+    }
+}
+
+@media (max-width: $breakpoint-sm - 1) {
+    .contact {
+        &__info {
+            margin-left: 0.5rem;
+        }
+
+        &__form {
+            margin-top: 2.5rem;
+        }
+
+        &__info {
+            text-align: center;
+        }
+
+        & .message-box {
+            text-align: center;
+            margin-top: $spacing-sm;
+            &__img {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .form {
+        margin-top: $spacing-sm;
+
+        &__submit-btn--center {
+            text-align: center;
+        }
+    }
+
+    .address {
+        &__details, &__icon {
+            float: none;
+        }
+
+        &__icon {
+            margin-top: -0.3rem;
+        }
+    }
+}

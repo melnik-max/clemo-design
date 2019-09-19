@@ -1,0 +1,56 @@
+.carousel-vertical__dots {
+    margin-top: -30rem;
+    float: right;
+    .active {
+        background-color: black;
+    }
+
+    .dot {
+        margin-right: 2.3rem;
+        display: block;
+        margin-bottom: 1.6rem;
+    }
+}
+
+.carousel-indicators {
+    position: relative;
+    margin-right: 0;
+    margin-left: 0
+}
+
+.carousel__dots {
+    text-align: center;
+    & .tns-nav-active {
+        background-color: black;
+    }
+
+    .active {
+        background-color: black;
+    }
+}
+
+.dot {
+    @extend .img--round;
+    border: 0.1rem solid black;
+    background-color: white;
+    margin-right: 1.2rem;
+    height: 1.3rem;
+    width: 1.3rem;
+    display: inline-block;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 390px) {
+    .carousel-vertical__dots {
+        margin-top: -25rem;
+        margin-right: -1.5rem;
+    }
+}
+
+@media (max-width: $breakpoint-sm - 1) {
+    .carousel-vertical-controls .control {
+        margin-right: 0.5rem;
+    }
+}

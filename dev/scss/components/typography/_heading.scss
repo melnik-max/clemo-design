@@ -1,0 +1,29 @@
+.heading {
+    text-align: center;
+    font-size: $heading-font-size;
+    font-weight: $heading-font-weight;
+}
+
+.heading--md {
+    @extend .heading;
+    font-size: 5rem;
+}
+
+.heading--sm {
+    line-height: 4.1rem;
+    font-size: 3rem;
+    color: black;
+}
+
+.heading--bold {
+    font-size: 4.6rem;
+    font-weight: $article-header-font-weight;
+    margin-bottom: 0.1rem;
+}
+
+@media (max-width: $breakpoint-md - 1px) {
+    .heading--bold {
+        font-size: 4rem;
+    }
+}
+
