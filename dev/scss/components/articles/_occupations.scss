@@ -1,4 +1,4 @@
-.occupations {
+.section {
     margin-bottom: 1rem;
 
     &__header {
@@ -29,7 +29,7 @@
 }
 
 @media (max-width: $breakpoint-lg) {
-    .occupations {
+    .section {
         &__sub-header {
             font-size: 4rem;
         }
@@ -37,7 +37,7 @@
 }
 
 @media (max-width: $breakpoint-sm - 1px) {
-    .occupations {
+    .section {
         text-align: center;
         font-size: 1.7rem;
 
