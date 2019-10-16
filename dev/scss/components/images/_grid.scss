@@ -58,6 +58,13 @@
     }
 }
 
+.img-grid, .img-grid__menu {
+    @include media-breakpoint-up(sm) {
+        @include make-col(12);
+    }
+}
+
+
 @media (min-width: $breakpoint-sm) {
     .overlay--shifted {
         margin-top: 2.5rem;

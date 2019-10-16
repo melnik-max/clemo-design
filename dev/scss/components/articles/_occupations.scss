@@ -1,4 +1,7 @@
 .section {
+    @include media-breakpoint-up(sm) {
+        @include make-col(12);
+    }
     margin-bottom: 1rem;
 
     &__header {

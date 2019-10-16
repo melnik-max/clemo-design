@@ -3,6 +3,10 @@
     margin-bottom: 7rem;
 
     .result {
+        @include media-breakpoint-up(sm) {
+            @include make-col(4);
+        }
+
         text-align: center;
 
         &__line {

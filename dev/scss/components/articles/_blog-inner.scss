@@ -1,4 +1,8 @@
 .entry {
+    @include media-breakpoint-up(sm) {
+        @include make-col(8);
+    }
+
     &__date {
         display: block;
         color: black;
@@ -23,6 +27,10 @@
 }
 
 .content {
+    @include media-breakpoint-up(sm) {
+        @include make-col(8);
+    }
+
     &__header {
         @extend .heading;
         font-size: 4.7rem;
@@ -40,6 +48,10 @@
 }
 
 .remark {
+    @include media-breakpoint-up(sm) {
+        @include make-col(7);
+    }
+
     margin: 7rem 0 -1rem 3.5rem;
 
     &__text {

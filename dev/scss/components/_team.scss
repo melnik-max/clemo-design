@@ -6,6 +6,12 @@
         margin-left: 0.6rem;
     }
 
+    &__slider-container {
+        @include media-breakpoint-up(lg) {
+            @include make-col(12);
+        }
+    }
+
     &__header {
         @extend .heading;
         color: black;

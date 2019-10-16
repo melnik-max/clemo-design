@@ -23,6 +23,14 @@
     }
 
     &__nav {
+        @include media-breakpoint-up(xs) {
+            @include make-col(7);
+        }
+
+        @include media-breakpoint-up(sm) {
+            @include make-col(4);
+        }
+
         & .tns-nav-active {
             background-color: black;
         }
@@ -35,6 +43,14 @@
     }
 
     &__pages-counter {
+        @include media-breakpoint-up(xs) {
+            @include make-col(3);
+        }
+
+        @include media-breakpoint-up(sm) {
+            @include make-col(2);
+        }
+
         margin-left: $spacing-sm;
     }
 }

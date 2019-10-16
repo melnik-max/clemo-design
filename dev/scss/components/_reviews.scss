@@ -23,6 +23,10 @@
     }
 
     &__comment {
+        @include media-breakpoint-up(md) {
+            @include make-col(6);
+        }
+
         margin-top: 1rem;
         padding-left: 6.5%;
     }

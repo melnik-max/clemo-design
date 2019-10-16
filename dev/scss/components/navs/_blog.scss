@@ -1,4 +1,7 @@
 .blog__nav {
+    @include media-breakpoint-up(sm) {
+        @include make-col(12);
+    }
     margin-top: 7.5rem;
     margin-bottom: 9rem;
     text-align: center;

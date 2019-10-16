@@ -15,6 +15,12 @@
     }
 
     &__info {
+        @include media-breakpoint-up(sm) {
+            @include make-col(6);
+        }
+        @include media-breakpoint-up(xs) {
+            @include make-col(12);
+        }
         margin-left: -0.5rem;
     }
 
@@ -34,6 +40,14 @@
 }
 
 .form {
+    @include media-breakpoint-up(sm) {
+        @include make-col(5);
+    }
+
+    @include media-breakpoint-up(xs) {
+        @include make-col(12);
+    }
+
     &__label {
         color: $grey;
     }
@@ -136,6 +150,14 @@
 }
 
 .message-box {
+    @include media-breakpoint-up(sm) {
+        @include make-col(6);
+    }
+
+    @include media-breakpoint-up(xs) {
+        @include make-col(12);
+    }
+
     &__text {
         margin-top: 2.5rem;
         line-height: 4.5rem;

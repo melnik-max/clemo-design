@@ -2,6 +2,12 @@
     margin-top: 9rem;
     margin-left: -2rem;
 
+    &__info {
+        @include media-breakpoint-up(sm) {
+            @include make-col(5);
+        }
+    }
+
     &__img {
         @extend .img--fluid;
         margin-top: 1rem;

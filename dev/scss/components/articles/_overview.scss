@@ -6,6 +6,10 @@
     }
 
     &__text {
+        @include media-breakpoint-up(sm) {
+            @include make-col(5);
+        }
+
         margin-left: 6%;
         margin-top: -1rem;
     }
@@ -22,6 +26,10 @@
 }
 
 .caption {
+    @include media-breakpoint-up(sm) {
+        @include make-col(6);
+    }
+
     &__img {
         @extend .img--fluid;
         margin-top: 1rem;
