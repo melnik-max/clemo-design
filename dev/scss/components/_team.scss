@@ -69,7 +69,7 @@
     }
 }
 
-@media (max-width: $breakpoint-lg) {
+@media #{$breakpoint-lg-down} {
     .team__header {
         margin-bottom: 0;
     }

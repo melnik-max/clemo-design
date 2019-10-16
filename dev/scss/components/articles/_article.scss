@@ -32,7 +32,7 @@
     margin-bottom: 1rem;
 }
 
-@media (max-width: $breakpoint-sm - 1) {
+@media #{$breakpoint-md-up} {
     .article__header {
         text-align: center;
     }

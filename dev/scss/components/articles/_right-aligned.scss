@@ -47,7 +47,7 @@
     }
 }
 
-@media (max-width: $breakpoint-sm - 1) {
+@media #{$breakpoint-sm-down} {
     .blog {
         text-align: center;
         font-size: 1.7rem;
@@ -69,7 +69,7 @@
     }
 }
 
-@media (max-width: $breakpoint-lg) {
+@media #{$breakpoint-lg-down} {
     .right-article__header {
         font-size: 4rem;
     }

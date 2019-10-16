@@ -65,13 +65,13 @@
 }
 
 
-@media (min-width: $breakpoint-sm) {
+@media #{$breakpoint-sm-up} {
     .overlay--shifted {
         margin-top: 2.5rem;
     }
 }
 
-@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
+@media #{$breakpoint-sm-up} and #{$breakpoint-lg-down} {
     .overlay {
         &__details--half {
             top: 31%;
@@ -93,7 +93,7 @@
     }
 }
 
-@media (max-width: $breakpoint-sm - 1) {
+@media #{$breakpoint-sm-down} {
     .img-grid {
         text-align: center;
         padding-bottom: 1.5rem;

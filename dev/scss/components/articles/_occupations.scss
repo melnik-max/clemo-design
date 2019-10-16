@@ -31,7 +31,7 @@
     }
 }
 
-@media (max-width: $breakpoint-lg) {
+@media #{$breakpoint-lg-down} {
     .section {
         &__sub-header {
             font-size: 4rem;
@@ -39,7 +39,7 @@
     }
 }
 
-@media (max-width: $breakpoint-sm - 1px) {
+@media #{$breakpoint-sm-down} {
     .section {
         text-align: center;
         font-size: 1.7rem;

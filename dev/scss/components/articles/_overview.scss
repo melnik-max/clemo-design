@@ -63,7 +63,7 @@
     }
 }
 
-@media (max-width: $breakpoint-lg) {
+@media #{$breakpoint-lg-down} {
     .caption__text {
         line-height: 4.5rem;
         font-size: 3rem;
