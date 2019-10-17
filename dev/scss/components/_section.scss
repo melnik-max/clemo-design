@@ -1,11 +1,20 @@
 .section {
     margin-bottom: 1rem;
+    color: black;
 }
 
 .section--centered {
+    @include make-row();
     justify-content: center;
 }
 
 .section--right {
     justify-content: flex-end;
+}
+
+.section--dark {
+    margin-top: 7rem;
+    background-color: $beige;
+    padding-top: 5rem;
+    padding-bottom: 9rem;
 }

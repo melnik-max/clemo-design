@@ -1,18 +1,6 @@
-.reviews {
-    margin-top: 7.5rem;
-    color: black;
-
-    &__header {
-        @extend .heading;
-        margin-left: 1rem;
-    }
-
-    .reviews__dots {
-        @extend .carousel__dots;
-    }
-}
-
 .testimonial {
+    padding-top: 7rem;
+
     &__slider {
         margin-top: 6.5rem;
     }
@@ -38,29 +26,29 @@
 }
 
 .cite {
+    @include media-breakpoint-up(md) {
+        @include make-col(3);
+    }
     margin-left: 20.5%;
 
     * {
+        text-align: right;
         float: right;
     }
 
-    &__line {
-        @extend .line;
-        margin-top: 0.5rem;
-    }
-
     &__name {
+        width: 100%;
+        text-align: right;
         font-size: 4rem;
         font-weight: 700;
     }
 
     &__position {
-        margin-top: 1em;
-        margin-right: -5.5rem;
+        width: 100%;
     }
 }
 
-@media (max-width: $breakpoint-sm - 1px) {
+@media #{$breakpoint-sm-down} {
     .reviews__dots {
         position: relative;
         bottom: 73rem;

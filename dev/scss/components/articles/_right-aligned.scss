@@ -1,5 +1,12 @@
 .right-article {
+    @include make-row();
     margin-top: 1rem;
+
+    &__img-holder {
+        @include media-breakpoint-up(sm) {
+            @include make-col(6);
+        }
+    }
 
     &__header {
         margin-top: -0.8rem;
@@ -20,6 +27,11 @@
     }
 
     &__info {
+        @include media-breakpoint-up(sm) {
+            @include make-col(5);
+            @include make-col-offset(1);
+        }
+
         margin-left: 6.5rem;
     }
 

@@ -1,6 +1,6 @@
 .left-article {
-    margin-top: 9rem;
-    margin-left: -2rem;
+    @include make-row();
+    margin: 9rem 0 8rem -2rem;
 
     &__info {
         @include media-breakpoint-up(sm) {
@@ -43,9 +43,13 @@
         }
     }
 
-    &__line {
-        @extend .line--left;
-        margin-top: $spacing-sm;
+    &__img-holder {
+        @include media-breakpoint-up(sm) {
+            @include make-col(6);
+        }
+        @include media-breakpoint-up(lg) {
+            @include make-col-offset(1);
+        }
     }
 }
 

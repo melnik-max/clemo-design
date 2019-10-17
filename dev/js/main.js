@@ -11,12 +11,12 @@
     $('#contact-form').removeClass('hidden')
   })
 
-  if ($('.team__slider').length) {
+  if ($('#team-slider').length) {
     var teamSlider = tns({
-      container: '.team__slider',
+      container: '#team-slider',
       slideBy: 'page',
       navContainer: '.carousel__dots',
-      controlsContainer: '.team__controls',
+      controlsContainer: '#controls',
       touch: false,
       responsive: {
         0: {

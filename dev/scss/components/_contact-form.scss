@@ -4,6 +4,7 @@
         background-color: themed('bgColor');
     }
     margin-top: $spacing-xl;
+    padding-top: $spacing-md;
     padding-bottom: $spacing-xl;
 
     &__header {
@@ -26,6 +27,7 @@
     }
 
     &__body {
+        @include make-row();
         margin-top: 7.5rem;
     }
 

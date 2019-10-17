@@ -8,6 +8,11 @@
     font-weight: $heading-font-weight;
 }
 
+.heading--black {
+    @extend .heading;
+    color: black;
+}
+
 .heading--md {
     @extend .heading;
     font-size: 5rem;
