@@ -16,10 +16,11 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 991px;
 $breakpoint-xl: 1199px;
 
-$breakpoint-md-up: 'screen and (min-width: 768px)';
+$breakpoint-md-up: '(min-width: 768px)';
 $breakpoint-sm-down: '(max-width: 576px)';
 $breakpoint-lg-down: '(max-width: 991px)';
-$breakpoint-sm-up: 'screen and (min-width: 576)';
+$breakpoint-xl-up: '(min-width: 1199px)';
+$breakpoint-sm-up: '(min-width: 576)';
 
 $heading-font-size: 6rem;
 $heading-font-weight: 100;

@@ -1,28 +1,35 @@
+.slider, .controls {
+    text-align: center;
+}
+
+.controls {
+    margin-top: 7rem;
+    .prev {
+        margin-right: $spacing-xs;
+    }
+    *:hover {
+        cursor: pointer;
+    }
+}
+
+.slider-counter {
+    @include media-breakpoint-up(xs) {
+        @include make-col(3);
+    }
+
+    @include media-breakpoint-up(sm) {
+        @include make-col(2);
+    }
+
+    margin-left: $spacing-sm;
+}
+
 .product {
     font-size: $base-font-size;
     margin-top: 7rem;
     margin-bottom: -1rem;
 
-    &__slider, &__controls {
-        text-align: center;
-    }
-
-    &__slider {
-        margin-top: 1rem;
-    }
-
-    &__controls {
-        margin-top: 7rem;
-        .prev {
-            margin-right: $spacing-xs;
-        }
-    }
-
-    &__controls *:hover {
-        cursor: pointer;
-    }
-
-    &__nav {
+    .slider-nav {
         @include media-breakpoint-up(xs) {
             @include make-col(7);
         }
@@ -31,7 +38,7 @@
             @include make-col(4);
         }
 
-        & .tns-nav-active {
+        .tns-nav-active {
             background-color: black;
         }
     }
@@ -40,17 +47,5 @@
         @extend .img--fluid;
         margin-top: $spacing-lg;
         margin-bottom: 4.5rem;
-    }
-
-    &__pages-counter {
-        @include media-breakpoint-up(xs) {
-            @include make-col(3);
-        }
-
-        @include media-breakpoint-up(sm) {
-            @include make-col(2);
-        }
-
-        margin-left: $spacing-sm;
     }
 }

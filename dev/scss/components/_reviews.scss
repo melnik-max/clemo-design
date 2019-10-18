@@ -65,13 +65,10 @@
     }
 }
 
-@media #{$breakpoint-lg-down} {
+@media #{$breakpoint-sm-down} {
     .cite * {
-        float: none;
-    }
-
-    .cite__position {
-        margin-right: 0;
+        float: left;
+        text-align: left;
     }
 }
 
@@ -96,9 +93,9 @@
             float: left;
         }
 
-        &__position {
+        /*&__position {
             margin-left: -5.5rem;
-        }
+        }*/
     }
 }
 

@@ -1,29 +1,4 @@
-.related-items {
-    color: black;
-    margin-top: $spacing-xl;
-    padding-bottom: 9rem;
-    background-color: $beige;
-
-    &__header {
-        @extend .heading;
-        margin-left: 0.7rem;
-        margin-top: 7.5rem;
-        margin-bottom: $spacing-xs;
-    }
-
-    .related-items__slider-container {
-        @include media-breakpoint-up(lg) {
-            @include make-col(12);
-        }
-    }
-
-}
-
 .item {
-    @include media-breakpoint-up(sm) {
-        @include make-col(12);
-    }
-
     margin-top: 1rem;
     margin-bottom: $spacing-sm;
     margin-left: 0.1rem;
@@ -35,12 +10,8 @@
         font-weight: $article-header-font-weight;
     }
 
-    &__line {
-        @extend .line--left;
-        margin-top: 1rem;
-    }
-
     &__footer {
+        color: black;
         float: left;
         margin-top: $spacing-xs;
         margin-left: -5.5rem;

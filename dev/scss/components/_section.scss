@@ -3,6 +3,14 @@
     color: black;
 }
 
+.section-12 {
+    @include media-breakpoint-up(sm) {
+        @include make-col(12);
+    }
+
+    text-align: center;
+}
+
 .section--centered {
     @include make-row();
     justify-content: center;

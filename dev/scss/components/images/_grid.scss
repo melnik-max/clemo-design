@@ -10,7 +10,7 @@
 }
 
 .overlay {
-    margin-top: 0.5rem;
+    margin-right: 1.5rem;
     position: relative;
     display: inline-block;
 
@@ -65,16 +65,15 @@
     }
 }
 
-.img-grid, .img-grid__menu {
-    @include media-breakpoint-up(sm) {
-        @include make-col(12);
-    }
-}
-
-
 @media #{$breakpoint-sm-up} {
     .overlay--shifted {
         margin-top: 2.5rem;
+    }
+}
+
+@media #{$breakpoint-xl-up} {
+    .overlay {
+        margin-top: 1.5rem;
     }
 }
 

@@ -36,9 +36,9 @@
     })
   }
 
-  if ($('.related-items__slider').length) {
+  if ($('#related-items-slider').length) {
     var postsSlider = tns({
-      container: '.related-items__slider',
+      container: '#related-items-slider',
       slideBy: 'page',
       navContainer: '#slider-controls',
       controls: false,
@@ -61,23 +61,23 @@
     })
   }
 
-  if ($('.product__slider').length) {
+  if ($('#product-slider').length) {
     var productSlider = tns({
-      container: '.product__slider',
+      container: '#product-slider',
       nav: true,
-      navContainer: '.product__nav',
+      navContainer: '#slider-nav',
       touch: false,
-      controlsContainer: '.product__controls'
+      controlsContainer: '#product-controls'
     })
 
-    $('.product__nav *').click(function () {
-      $('.product__current-slide').html($(this).data('index'))
+    $('#slider-nav *').click(function () {
+      $('#current-slide').html($(this).data('index'))
     })
 
-    $('.product__controls *').click(function () {
+    $('.controls *').click(function () {
       setTimeout(function () {
-        var indexCurrent = $('.product__nav .tns-nav-active').data('index')
-        $('.product__current-slide').html(indexCurrent)
+        var indexCurrent = $('#slider-nav .tns-nav-active').data('index')
+        $('#current-slide').html(indexCurrent)
       }, 50)
     })
   }

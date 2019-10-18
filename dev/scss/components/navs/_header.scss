@@ -21,6 +21,7 @@
 }
 
 %half-border-bottom {
+    color: black !important;
     padding-bottom: 3.5rem;
     background: linear-gradient(black, black) left no-repeat;
     background-size: 55% 0.3rem;
@@ -33,4 +34,3 @@
 .contact-us-page .contact-page-link {
     @extend %half-border-bottom;
 }
-

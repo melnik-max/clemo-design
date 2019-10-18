@@ -1,8 +1,5 @@
 .article {
-    &__line {
-        @extend .line--left;
-        margin-top: 9.5rem;
-    }
+    margin-top: 3.6rem;
 
     &__text {
         margin-top: 14rem;
@@ -18,7 +15,7 @@
         margin-top: -1rem;
         .fa {
             margin-top: 8.8rem;
-            margin-right: 1.7rem;
+            margin-right: 1rem;
         }
     }
 
@@ -26,10 +23,6 @@
 
 .article--shifted > * {
     margin-left: -3rem;
-}
-
-.article--shifted {
-    margin-bottom: 1rem;
 }
 
 @media #{$breakpoint-md-up} {
