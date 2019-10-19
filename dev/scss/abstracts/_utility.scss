@@ -2,6 +2,14 @@
     margin-top: 7rem;
 }
 
+.spacer--sm {
+    @extend .spacer;
+    @media #{$breakpoint-sm-down} {
+        display: none;
+    }
+}
+
+
 .hidden {
     display: none;
 }

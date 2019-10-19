@@ -2,64 +2,22 @@
     @include make-row();
     margin-top: 1rem;
 
-    &__header {
-        margin-top: -0.8rem;
-        margin-bottom: 1.7rem;
-        line-height: 4.5rem;
-        color: black;
-        font-weight: $article-header-font-weight;
-        font-size: 4.5rem;
-        a:hover {
-            cursor: pointer;
-            color: $link-hover-color;
-        }
-    }
-
-    &__date {
-        display: block;
-        color: black;
-        margin-bottom: 3rem;
-    }
-
     &__info {
+        @include make-col-ready();
+
         @include media-breakpoint-up(sm) {
             @include make-col(5);
             @include make-col-offset(1);
         }
-
-        margin-left: 6.5rem;
-    }
-
-    &__text {
-        margin-top: 8rem;
-        margin-bottom: 5rem;
     }
 }
 
 @media #{$breakpoint-sm-down} {
     .right-article {
-        &__text {
-            margin-top: 0;
-        }
-
-        &__line {
+        .line--left {
             margin-top: $spacing-xs;
             float: none;
         }
-
-        &__header {
-            margin-top: $spacing-xs;
-        }
-    }
-}
-
-@media #{$breakpoint-lg-down} {
-    .right-article__header {
-        font-size: 4rem;
-    }
-
-    .right-article__info {
-        margin-left: 0;
     }
 }
 

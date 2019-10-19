@@ -1,11 +1,13 @@
 .section {
+    @include make-col-ready();
+
     @include media-breakpoint-up(sm) {
         @include make-col(12);
     }
     padding-top: 3rem;
     margin-bottom: 1rem;
 
-    &__header {
+    /*&__header {
         @extend .heading;
         margin-top: 6rem;
     }
@@ -16,7 +18,7 @@
 
     & .left-article {
         margin-top: 10rem;
-    }
+    }*/
 
     &__line {
         @extend .line--left, .line--shifted;

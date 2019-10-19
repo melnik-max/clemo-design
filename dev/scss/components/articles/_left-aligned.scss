@@ -7,66 +7,19 @@
             @include make-col(5);
         }
     }
-
-    &__date {
-        display: block;
-        color: black;
-        margin-top: -1.4rem;
-        margin-bottom: 3rem;
-    }
-
-    &__text {
-        margin-top: 8.6rem;
-        margin-bottom: 5.5rem;
-    }
-
-    &__header {
-        color: black;
-        margin-bottom: 3.5rem;
-        margin-top: 0.5rem;
-        line-height: 4.5rem;
-        font-weight: $article-header-font-weight;
-        font-size: 4.5rem;
-        a:hover {
-            cursor: pointer;
-            color: $link-hover-color;
-        }
-    }
-}
-
-@media #{$breakpoint-lg-down} {
-    .left-article {
-        &__header {
-            font-size: 4rem;
-        }
-
-        &__info {
-            margin-right: 0;
-        }
-    }
 }
 
 @media #{$breakpoint-sm-down} {
     .left-article {
         margin-top: 6rem;
 
-        &__text {
-            margin-top: 0;
-        }
-
         &__info {
             margin-bottom: $spacing-xs;
         }
 
-        &__line {
+        .line--left {
             margin-top: $spacing-xs;
             float: none;
         }
-    }
-}
-
-@media #{$breakpoint-sm-up} and #{$breakpoint-lg-down} {
-    .left-article {
-        margin-left: 3rem;
     }
 }
