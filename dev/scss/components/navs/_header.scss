@@ -7,7 +7,8 @@
 
 .nav-link {
     margin-left: 2.8rem;
-    padding-bottom: 3.5rem;
+    padding-top: 2rem;
+    padding-bottom: 4.3rem;
     &:hover {
         @extend %half-border-bottom;
     }
@@ -23,9 +24,9 @@
 
 %half-border-bottom {
     color: black !important;
-    padding-bottom: 3.5rem;
+    padding-bottom: 4.3rem;
     background: linear-gradient(black, black) left no-repeat;
-    background-size: 55% 0.3rem;
+    background-size: 55% 0.2rem;
 }
 
 .works-page .works-page-link,
@@ -34,4 +35,13 @@
 .blog-page .blog-page-link,
 .contact-us-page .contact-page-link {
     @extend %half-border-bottom;
+}
+
+@media #{$breakpoint-md-down} {
+    .nav-link, %half-border-bottom {
+        padding-bottom: 3.1rem;
+    }
+    %half-border-bottom {
+        background-size: 8% 0.3rem;
+    }
 }

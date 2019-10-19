@@ -1,11 +1,7 @@
-.grid {
-    margin-top: 4rem;
-    @include make-row();
-
-    &__column {
-        @include media-breakpoint-up(sm) {
-            @include make-col(4);
-        }
+.column {
+   /* @include make-col-ready();*/
+    @include media-breakpoint-up(sm) {
+        @include make-col(4);
     }
 }
 
@@ -100,8 +96,7 @@
 }
 
 @media #{$breakpoint-sm-down} {
-    .img-grid {
-        text-align: center;
-        padding-bottom: 1.5rem;
+    .column {
+        padding-left: 1.5rem;
     }
 }

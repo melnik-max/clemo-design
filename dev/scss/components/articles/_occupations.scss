@@ -7,19 +7,6 @@
     padding-top: 3rem;
     margin-bottom: 1rem;
 
-    /*&__header {
-        @extend .heading;
-        margin-top: 6rem;
-    }
-
-    & .right-article {
-        margin-top: 8rem;
-    }
-
-    & .left-article {
-        margin-top: 10rem;
-    }*/
-
     &__line {
         @extend .line--left, .line--shifted;
     }

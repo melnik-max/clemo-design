@@ -30,9 +30,9 @@
     margin-bottom: 0.1rem;
 }
 
-@media (max-width: $breakpoint-md - 1px) {
+@media #{$breakpoint-lg-down} {
     .heading--bold {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
 
