@@ -2,12 +2,6 @@
     @include make-row();
     margin-top: 1rem;
 
-    &__img-holder {
-        @include media-breakpoint-up(sm) {
-            @include make-col(6);
-        }
-    }
-
     &__header {
         margin-top: -0.8rem;
         margin-bottom: 1.7rem;
@@ -24,6 +18,7 @@
     &__date {
         display: block;
         color: black;
+        margin-bottom: 3rem;
     }
 
     &__info {
@@ -35,31 +30,13 @@
         margin-left: 6.5rem;
     }
 
-    &__line {
-        @extend .line--left;
-        margin-top: $spacing-sm;
-    }
-
     &__text {
-        margin-top: 8.6rem;
+        margin-top: 8rem;
         margin-bottom: 5rem;
     }
 }
 
-.blog {
-    &__header {
-        @extend .heading;
-        margin-top: 6.8rem;
-    }
-
-}
-
 @media #{$breakpoint-sm-down} {
-    .blog {
-        text-align: center;
-        font-size: 1.7rem;
-    }
-
     .right-article {
         &__text {
             margin-top: 0;

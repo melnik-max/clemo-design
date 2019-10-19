@@ -1,33 +1,23 @@
 .left-article {
     @include make-row();
-    margin: 9rem 0 8rem -2rem;
 
     &__info {
+        @include make-col-ready();
         @include media-breakpoint-up(sm) {
             @include make-col(5);
         }
-    }
-
-    &__img {
-        @extend .img--fluid;
-        margin-top: 1rem;
-        float: right;
     }
 
     &__date {
         display: block;
         color: black;
         margin-top: -1.4rem;
+        margin-bottom: 3rem;
     }
 
     &__text {
         margin-top: 8.6rem;
         margin-bottom: 5.5rem;
-    }
-
-    &__btn {
-        @extend .btn--white;
-        margin-top: 3.2rem;
     }
 
     &__header {
@@ -40,15 +30,6 @@
         a:hover {
             cursor: pointer;
             color: $link-hover-color;
-        }
-    }
-
-    &__img-holder {
-        @include media-breakpoint-up(sm) {
-            @include make-col(6);
-        }
-        @include media-breakpoint-up(lg) {
-            @include make-col-offset(1);
         }
     }
 }
