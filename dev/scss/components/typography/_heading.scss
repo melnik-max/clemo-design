@@ -1,4 +1,5 @@
 .heading {
+    @include make-col-ready();
     @include media-breakpoint-up(sm) {
         @include make-col(12);
     }
@@ -22,6 +23,12 @@
     line-height: 4.1rem;
     font-size: 3rem;
     color: black;
+}
+
+.heading--shifted {
+    @extend .heading;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .heading--bold {

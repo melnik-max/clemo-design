@@ -1,4 +1,9 @@
 .item {
+    @include make-col-ready();
+    @include media-breakpoint-up(sm) {
+        @include make-col(12);
+    }
+
     margin-top: 1rem;
     margin-bottom: $spacing-sm;
     margin-left: 0.1rem;

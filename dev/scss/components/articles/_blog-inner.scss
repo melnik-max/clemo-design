@@ -1,32 +1,5 @@
-.entry {
-    @include media-breakpoint-up(sm) {
-        @include make-col(8);
-    }
-
-    &__date {
-        display: block;
-        color: black;
-        margin-top: 7rem;
-        text-align: center;
-        margin-bottom: $spacing-xs;
-    }
-
-    &__img {
-        @extend .img--fluid;
-        margin-top: 7.3rem;
-    }
-
-    &__line {
-        @extend .line--left;
-        margin-top: 5.2rem;
-    }
-
-    &__text {
-        margin-top: 9.5rem;
-    }
-}
-
 .content {
+    @include make-col-ready();
     @include media-breakpoint-up(sm) {
         @include make-col(8);
     }
@@ -48,6 +21,7 @@
 }
 
 .remark {
+    @include make-col-ready();
     @include media-breakpoint-up(sm) {
         @include make-col(7);
     }

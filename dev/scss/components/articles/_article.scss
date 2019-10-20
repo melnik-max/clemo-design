@@ -1,15 +1,27 @@
 .article {
-    margin-top: 3.6rem;
+    &__content {
+        @include make-col-ready();
+        @include media-breakpoint-up(sm) {
+            @include make-col(8);
+        }
 
-    &__text {
-        margin-top: 14rem;
+        padding-top: 5rem;
     }
 
-    /*&__header {
+    &__text {
+        margin-left: 3rem;
+    }
+
+    &__line {
+        @extend .line--left;
+        margin: 1rem 1rem 0 -3.2rem;
+    }
+
+    &__heading {
         @extend .heading;
-        margin-top: 6.6rem;
-        line-height: 7rem;
-    }*/
+        margin-bottom: 2rem;
+        font-size: 4.8rem;
+    }
 
     &__social {
         margin-top: -1rem;
@@ -19,12 +31,22 @@
         }
     }
 
+    &__image {
+        @extend .img--fluid;
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+    }
 }
 
 .date {
     display: block;
     color: black;
     margin-bottom: 2.4rem;
+}
+
+.date--center {
+    @extend .date;
+    text-align: center;
 }
 
 .article-heading {
@@ -45,6 +67,21 @@
 @media #{$breakpoint-sm-down} {
     .article-heading {
         margin-top: $spacing-xs;
+    }
+
+    .article {
+        &__text {
+            margin: 0;
+        }
+
+        &__line {
+            margin: 2rem 0 2rem 0;
+            float: none;
+        }
+
+        &__heading {
+            font-size: 3.5rem;
+        }
     }
 }
 
