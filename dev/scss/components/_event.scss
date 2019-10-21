@@ -4,8 +4,24 @@
     font-size: 3rem;
     padding-top: 7rem;
     padding-bottom: 7rem;
-    margin-bottom: -0.5rem;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
+
+    &__info {
+        @include media-breakpoint-up(sm) {
+            @include make-col(7);
+        }
+    }
+
+    &__wrapper {
+        @include media-breakpoint-up(lg) {
+            @include make-col(3);
+        }
+        @include media-breakpoint-up(sm) {
+            @include make-col(5);
+        }
+    }
 
     &__name {
         color: #8E8E8E;
@@ -27,7 +43,7 @@
     }
 }
 
-@media (max-width: $breakpoint-sm - 1) {
+@media #{$breakpoint-sm-down} {
     .event {
         &__info {
             margin-bottom: $spacing-sm;

@@ -1,21 +1,6 @@
-%separator {
+.separator {
     height: 0.1rem;
     background-color: $light-grey;
     width: 100vw;
     max-width: 100%;
-}
-
-.separator--shifted-sm {
-    @extend %separator;
-    margin-top: 5.1rem;
-}
-
-.separator--shifted-xl {
-    @extend %separator;
-    margin-top: 14.5rem;
-}
-
-.separator--shifted-md {
-    @extend %separator;
-    margin-top: 7rem;
 }

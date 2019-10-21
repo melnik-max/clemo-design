@@ -1,3 +1,5 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
 @import 'abstracts/variables';
 @import 'abstracts/base';
 @import 'abstracts/utility';
@@ -22,7 +24,6 @@
 @import 'components/articles/blog';
 @import 'components/articles/right-aligned';
 @import 'components/articles/left-aligned';
-@import 'components/articles/occupations';
 
 
 @import 'components/navs/blog';
@@ -42,5 +43,3 @@
 @import 'components/results';
 @import 'components/contact-form';
 @import 'components/section';
-
-

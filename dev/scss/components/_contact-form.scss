@@ -4,6 +4,7 @@
         background-color: themed('bgColor');
     }
     margin-top: $spacing-xl;
+    padding-top: $spacing-md;
     padding-bottom: $spacing-xl;
 
     &__header {
@@ -15,10 +16,18 @@
     }
 
     &__info {
+        @include media-breakpoint-up(sm) {
+            @include make-col(6);
+        }
+        @include media-breakpoint-up(xs) {
+            @include make-col(12);
+        }
+
         margin-left: -0.5rem;
     }
 
     &__body {
+        @include make-row();
         margin-top: 7.5rem;
     }
 
@@ -34,6 +43,14 @@
 }
 
 .form {
+    @include media-breakpoint-up(sm) {
+        @include make-col(5);
+    }
+
+    @include media-breakpoint-up(xs) {
+        @include make-col(12);
+    }
+
     &__label {
         color: $grey;
     }
@@ -136,6 +153,14 @@
 }
 
 .message-box {
+    @include media-breakpoint-up(sm) {
+        @include make-col(6);
+    }
+
+    @include media-breakpoint-up(xs) {
+        @include make-col(12);
+    }
+
     &__text {
         margin-top: 2.5rem;
         line-height: 4.5rem;
@@ -163,6 +188,10 @@
     }
 }
 
+.contact--light {
+    margin-top: -10rem;
+}
+
 .contact__social {
     margin-top: 1rem;
     .fa {
@@ -187,26 +216,17 @@
     margin-bottom: -1.6rem;
 }
 
-@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1px) {
-    .contact__info {
-        font-size: 1.6rem;
-    }
-}
-
 @media (max-width: $breakpoint-md - 1px) {
     .contact__social .fa {
         margin-right: 0.8rem;
     }
 }
 
-@media (max-width: $breakpoint-sm - 1) {
+@media #{$breakpoint-sm-down} {
     .contact {
-        &__info {
-            margin-left: 0.5rem;
-        }
-
-        &__form {
-            margin-top: 2.5rem;
+        &__info, .form {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
         }
 
         &__info {

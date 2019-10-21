@@ -1,3 +1,20 @@
+%arrow {
+    margin-top: 15rem;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.arrow--left {
+    @extend %arrow;
+    float: left;
+}
+
+.arrow--right {
+    @extend %arrow;
+    float: right;
+}
+
 .carousel-vertical__dots {
     margin-top: -30rem;
     float: right;
@@ -29,6 +46,10 @@
     }
 }
 
+.carousel__dots--shifted {
+    @extend .carousel__dots;
+}
+
 .dot {
     @extend .img--round;
     border: 0.1rem solid black;
@@ -42,15 +63,13 @@
     }
 }
 
-@media (max-width: 390px) {
-    .carousel-vertical__dots {
-        margin-top: -25rem;
-        margin-right: -1.5rem;
+@media #{$breakpoint-sm-down} {
+    .carousel__dots--shifted {
+        position: relative;
+        bottom: 73rem;
     }
-}
 
-@media (max-width: $breakpoint-sm - 1) {
-    .carousel-vertical-controls .control {
-        margin-right: 0.5rem;
+    %arrow {
+        width: 2.3rem;
     }
 }

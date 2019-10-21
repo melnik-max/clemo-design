@@ -1,5 +1,12 @@
+.column {
+   /* @include make-col-ready();*/
+    @include media-breakpoint-up(sm) {
+        @include make-col(4);
+    }
+}
+
 .overlay {
-    margin-top: 0.5rem;
+    margin-right: 1.5rem;
     position: relative;
     display: inline-block;
 
@@ -7,7 +14,13 @@
         font-size: 1.8rem;
     }
 
-    &__details {
+    .panel {
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
         position: absolute;
         margin: auto;
         top: 0;
@@ -19,26 +32,6 @@
         background: $beige;
         opacity: 0;
         transition: opacity 500ms ease-in-out;
-    }
-
-    &__details--half {
-        @extend .overlay__details;
-        top: 45%;
-        height: 45%;
-    }
-
-    &__details--center {
-        @extend .overlay__details--half;
-        top: 45%;
-    }
-
-    &__details {
-        flex-direction: column;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: black;
 
         &:hover {
             cursor: pointer;
@@ -46,10 +39,20 @@
         }
     }
 
+    .panel--half {
+        @extend .panel;
+        top: 45%;
+        height: 45%;
+    }
+
+    .panel--center {
+        @extend .panel--half;
+        top: 45%;
+    }
+
     &__header {
         font-size: 4rem;
         font-weight: 700;
-        margin-bottom: -0.1rem;
         line-height: 4rem;
     }
 
@@ -58,21 +61,22 @@
     }
 }
 
-@media (min-width: $breakpoint-sm) {
+@media #{$breakpoint-sm-up} {
     .overlay--shifted {
         margin-top: 2.5rem;
     }
 }
 
-@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
+@media #{$breakpoint-xl-up} {
     .overlay {
-        &__details--half {
-            top: 31%;
-        }
+        margin-top: 1.5rem;
+    }
+}
 
+@media (min-width: 576px) and #{$breakpoint-lg-down} {
+    .overlay {
         &__header {
-            font-size: 2rem;
-            margin-bottom: -0.5rem;
+            font-size: 2.8rem;
             line-height: 3rem;
         }
 
@@ -80,15 +84,14 @@
             font-size: 1.5rem;
         }
 
-        &__details--half {
+        .panel--half {
             top: 46%;
         }
     }
 }
 
-@media (max-width: $breakpoint-sm - 1) {
-    .img-grid {
-        text-align: center;
-        padding-bottom: 1.5rem;
+@media #{$breakpoint-sm-down} {
+    .column {
+        padding-left: 1.5rem;
     }
 }

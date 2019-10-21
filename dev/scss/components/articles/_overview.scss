@@ -1,32 +1,4 @@
-.overview {
-    &__header {
-        @extend .heading;
-        margin-top: 6.5rem;
-        margin-bottom: 7.5rem;
-    }
-
-    &__text {
-        margin-left: 6%;
-        margin-top: -1rem;
-    }
-
-    &__info {
-        color: black;
-        margin-top: $spacing-md;
-        margin-bottom: $spacing-md;
-    }
-
-    &__line {
-        @extend .line--left, .line--shifted;
-    }
-}
-
 .caption {
-    &__img {
-        @extend .img--fluid;
-        margin-top: 1rem;
-    }
-
     &__line {
         @extend .line--left;
         margin-top: 5rem;
@@ -43,29 +15,9 @@
     }
 }
 
-.caption--shifted {
-    margin-top: 5rem;
-}
-
-.service {
-    margin-top: 7rem;
-    &__header {
-        @extend .heading;
-        margin-bottom: 7.8rem;
-    }
-}
-
-@media (max-width: $breakpoint-lg) {
+@media #{$breakpoint-lg-down} {
     .caption__text {
         line-height: 4.5rem;
         font-size: 3rem;
-    }
-}
-
-@media (max-width: $breakpoint-sm - 1px) {
-    .overview {
-        &__text {
-            margin-top: 0;
-        }
     }
 }

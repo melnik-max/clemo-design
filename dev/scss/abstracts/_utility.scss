@@ -1,7 +1,30 @@
 .spacer {
-    margin-top: 10.8rem;
+    margin-top: 7rem;
 }
+
+.spacer--sm {
+    @extend .spacer;
+    @media #{$breakpoint-sm-down} {
+        display: none;
+    }
+}
+
 
 .hidden {
     display: none;
+}
+
+.inline-centered {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.gutters {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.margin-gutters {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }

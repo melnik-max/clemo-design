@@ -1,27 +1,13 @@
-.img-grid {
-    &__header {
-        @extend .heading;
-        margin-top: 11rem;
+.menu {
+    @include media-breakpoint-up(sm) {
+        @include make-col(12);
     }
 
-    &__images {
-        margin-top: $spacing-lg;
-        margin-bottom: 1.8rem;
-    }
+    text-align: center;
+    margin-top: 7.5rem;
+    margin-bottom: 9rem;
 
-    &__menu {
-        text-align: center;
-        margin-top: 7.5rem;
-        margin-bottom: 9rem;
-    }
-
-    &__btn-wrapper {
-        text-align: center;
-        margin-top: 5rem;
-        margin-bottom: $spacing-xs;
-    }
-
-    .menu-item {
+    &__item {
         font-size: $base-font-size;
         margin-right: 1.5rem;
         color: $base-text-color;
@@ -30,11 +16,12 @@
         }
     }
 
-    .menu-item--active {
-        @extend .menu-item;
+    &__item--active {
+        @extend .menu__item;
         color: black;
     }
 }
+
 
 
 

@@ -1,48 +1,7 @@
-.team {
-    margin-top: 5rem;
-    background-color: $beige;
-    padding-bottom: 9rem;
-    .carousel-horizontal-controls {
-        margin-left: 0.6rem;
-    }
-
-    &__header {
-        @extend .heading;
-        color: black;
-        margin-top: 7.2rem;
-        margin-bottom: 7.8rem;
-    }
-
-    &__controls {
-        padding-left: 0;
-        list-style: none;
-    }
-
-    &__arrow:hover {
-        cursor: pointer;
-    }
-
-    &__arrow--left {
-        @extend .team__arrow;
-        margin-top: 6.5rem;
-        float: left;
-    }
-
-    &__arrow--right {
-        @extend .team__arrow;
-        margin-top: 6.5rem;
-        float: right;
-    }
-}
-
-.person {
+.bio {
     text-align: center;
     color: #000;
     margin-bottom: 2.3rem;
-
-    &__img {
-        @extend .img--fluid, .img--round;
-    }
 
     &__name {
         margin-top: 1.5rem;
@@ -50,41 +9,10 @@
         font-weight: 700;
         line-height: 4.5rem;
     }
-
-    &__line {
-        @extend .line;
-        margin-bottom: 1rem;
-    }
 }
 
 @media (max-width: 1281px) {
-    .person__name {
+    .bio__name {
         font-size: 3.3rem;
-    }
-}
-
-@media (max-width: $breakpoint-lg) {
-    .team__header {
-        margin-bottom: 0;
-    }
-}
-
-@media (max-width: $breakpoint-sm) {
-    .team__arrow {
-        width: 2.65rem;
-    }
-}
-
-@media (min-width: 640px) and (max-width: 766px) {
-    .team__arrow--left, .team__arrow--right {
-        position: relative;
-    }
-
-    .team__arrow--left {
-        right: 10%;
-    }
-
-    .team__arrow--right {
-        left: 10%;
     }
 }

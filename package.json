@@ -31,5 +31,8 @@
     "gulp-watch": "^5.0.1",
     "imagemin-pngquant": "^8.0.0"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }

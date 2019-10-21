@@ -1,7 +1,17 @@
 .heading {
+    @include make-col-ready();
+    @include media-breakpoint-up(sm) {
+        @include make-col(12);
+    }
+
     text-align: center;
     font-size: $heading-font-size;
     font-weight: $heading-font-weight;
+}
+
+.heading--black {
+    @extend .heading;
+    color: black;
 }
 
 .heading--md {
@@ -15,15 +25,21 @@
     color: black;
 }
 
+.heading--shifted {
+    @extend .heading--black;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
 .heading--bold {
     font-size: 4.6rem;
     font-weight: $article-header-font-weight;
     margin-bottom: 0.1rem;
 }
 
-@media (max-width: $breakpoint-md - 1px) {
+@media #{$breakpoint-lg-down} {
     .heading--bold {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
 

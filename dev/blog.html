@@ -7,43 +7,41 @@
 <body>
 <main class="blog-page">
     //= partials/header.html
-    <hr class="separator--shifted-sm">
+    <hr class="separator">
 
     <section class="container">
-        <div class="row section--centered">
-            <div class="col-sm-12">
+        <div class="row">
+            <div class="section">
+                <h1 class="heading--shifted">blog</h1>
 
-                <section class="blog">
-                    <h3 class="blog__header">blog</h3>
+                <nav class="menu">
+                    <a href="#"            class="menu__item--active">all</a>
+                    <a href="service.html" class="menu__item">creative kitchen</a>
+                    <a href="service.html" class="menu__item">art</a>
+                    <a href="service.html" class="menu__item">design</a>
+                    <a href="service.html" class="menu__item">life</a>
+                    <a href="service.html" class="menu__item">events</a>
+                </nav>
 
-                    <nav class="blog__nav col-sm-12">
-                        <a href="#"            class="blog__link--active">all</a>
-                        <a href="service.html" class="blog__link">creative kitchen</a>
-                        <a href="service.html" class="blog__link">art</a>
-                        <a href="service.html" class="blog__link">design</a>
-                        <a href="service.html" class="blog__link">life</a>
-                        <a href="service.html" class="blog__link">events</a>
-                    </nav>
+                //= partials/articles/right-aligned.html
+                //= partials/articles/left-aligned.html
 
-                    //= partials/articles/right-aligned.html
-                    //= partials/articles/left-aligned.html
+                <div class="spacer"></div>
 
-                    <div class="spacer"></div>
+                //= partials/articles/right-aligned.html
+                //= partials/articles/left-aligned.html
 
-                    //= partials/articles/right-aligned.html
-                    //= partials/articles/left-aligned.html
+                <div class="inline-centered">
+                    <a href="blog-inner.html" class="btn--black">show more</a>
+                </div>
 
-                    <div class="blog__btn-wrapper">
-                        <a href="blog-inner.html" class="btn--black">show more</a>
-                    </div>
-
-                </section><!-- /.blog -->
-            </div><!-- /.col-sm-12 -->
+            </div><!-- /.section -->
         </div><!-- /.row -->
     </section><!-- /.container -->
 
-    <hr class="separator--shifted-xl">
+    <div class="spacer"></div>
 
+    <hr class="separator">
     //= partials/footer.html
 </main>
 </body>

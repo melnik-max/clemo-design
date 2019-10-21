@@ -1,81 +1,26 @@
 .right-article {
+    @include make-row();
     margin-top: 1rem;
-
-    &__header {
-        margin-top: -0.8rem;
-        margin-bottom: 1.7rem;
-        line-height: 4.5rem;
-        color: black;
-        font-weight: $article-header-font-weight;
-        font-size: 4.5rem;
-        a:hover {
-            cursor: pointer;
-            color: $link-hover-color;
-        }
-    }
-
-    &__date {
-        display: block;
-        color: black;
-    }
+    text-align: left;
 
     &__info {
-        margin-left: 6.5rem;
-    }
+        @include make-col-ready();
 
-    &__line {
-        @extend .line--left;
-        margin-top: $spacing-sm;
-    }
-
-    &__text {
-        margin-top: 8.6rem;
-        margin-bottom: 5rem;
-    }
-}
-
-.blog {
-    &__header {
-        @extend .heading;
-        margin-top: 6.8rem;
-    }
-
-    &__btn-wrapper {
-        text-align: center;
-        margin-top: $spacing-md;
-        margin-bottom: $spacing-xs;
-    }
-}
-
-@media (max-width: $breakpoint-sm - 1) {
-    .blog {
-        text-align: center;
-        font-size: 1.7rem;
-    }
-
-    .right-article {
-        &__text {
-            margin-top: 0;
+        @include media-breakpoint-up(sm) {
+            @include make-col(5);
+            @include make-col-offset(1);
         }
+    }
+}
 
-        &__line {
+@media #{$breakpoint-sm-down} {
+    .right-article {
+        text-align: center;
+
+        .line--left {
             margin-top: $spacing-xs;
             float: none;
         }
-
-        &__header {
-            margin-top: $spacing-xs;
-        }
-    }
-}
-
-@media (max-width: $breakpoint-lg) {
-    .right-article__header {
-        font-size: 4rem;
-    }
-
-    .right-article__info {
-        margin-left: 0;
     }
 }
 
