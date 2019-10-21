@@ -1,13 +1,4 @@
 .article {
-    &__content {
-        @include make-col-ready();
-        @include media-breakpoint-up(sm) {
-            @include make-col(8);
-        }
-
-        padding-top: 5rem;
-    }
-
     &__text {
         margin-left: 3rem;
     }
@@ -19,7 +10,8 @@
 
     &__heading {
         @extend .heading;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+        margin-top: 5rem;
         font-size: 4.8rem;
     }
 

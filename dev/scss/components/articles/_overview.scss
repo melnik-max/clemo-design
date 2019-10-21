@@ -1,24 +1,4 @@
-.overview {
-    &__text {
-        @include media-breakpoint-up(sm) {
-            @include make-col(5);
-        }
-
-        margin-left: 6%;
-        margin-top: -1rem;
-    }
-
-    &__line {
-        @extend .line--left, .line--shifted;
-    }
-}
-
 .caption {
-    &__img {
-        @extend .img--fluid;
-        margin-top: 1rem;
-    }
-
     &__line {
         @extend .line--left;
         margin-top: 5rem;
@@ -35,25 +15,9 @@
     }
 }
 
-.service {
-    margin-top: 7rem;
-    &__header {
-        @extend .heading;
-        margin-bottom: 7.8rem;
-    }
-}
-
 @media #{$breakpoint-lg-down} {
     .caption__text {
         line-height: 4.5rem;
         font-size: 3rem;
-    }
-}
-
-@media (max-width: $breakpoint-sm - 1px) {
-    .overview {
-        &__text {
-            margin-top: 0;
-        }
     }
 }

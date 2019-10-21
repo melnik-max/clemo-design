@@ -1,5 +1,6 @@
 .left-article {
     @include make-row();
+    text-align: left;
 
     &__info {
         @include make-col-ready();
@@ -12,6 +13,7 @@
 @media #{$breakpoint-sm-down} {
     .left-article {
         margin-top: 6rem;
+        text-align: center;
 
         &__info {
             margin-bottom: $spacing-xs;

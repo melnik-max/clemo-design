@@ -1,6 +1,7 @@
 .right-article {
     @include make-row();
     margin-top: 1rem;
+    text-align: left;
 
     &__info {
         @include make-col-ready();
@@ -14,6 +15,8 @@
 
 @media #{$breakpoint-sm-down} {
     .right-article {
+        text-align: center;
+
         .line--left {
             margin-top: $spacing-xs;
             float: none;

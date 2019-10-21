@@ -46,6 +46,10 @@
     }
 }
 
+.carousel__dots--shifted {
+    @extend .carousel__dots;
+}
+
 .dot {
     @extend .img--round;
     border: 0.1rem solid black;
@@ -59,15 +63,13 @@
     }
 }
 
-@media (max-width: 390px) {
-    .carousel-vertical__dots {
-        margin-top: -25rem;
-        margin-right: -1.5rem;
-    }
-}
-
 @media #{$breakpoint-sm-down} {
-    .carousel-vertical-controls .control {
-        margin-right: 0.5rem;
+    .carousel__dots--shifted {
+        position: relative;
+        bottom: 73rem;
+    }
+
+    %arrow {
+        width: 2.3rem;
     }
 }
