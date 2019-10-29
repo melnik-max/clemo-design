@@ -7,15 +7,6 @@
     text-align: center;
 }
 
-.section--centered {
-    @include make-row();
-    justify-content: center;
-}
-
-.section--right {
-    justify-content: flex-end;
-}
-
 .section--left {
     @extend .section;
     text-align: left;

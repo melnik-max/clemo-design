@@ -25,16 +25,9 @@
     color: black;
 }
 
-.heading--shifted {
-    @extend .heading--black;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-}
-
 .heading--bold {
     font-size: 4.6rem;
     font-weight: $article-header-font-weight;
-    margin-bottom: 0.1rem;
 }
 
 @media #{$breakpoint-lg-down} {
