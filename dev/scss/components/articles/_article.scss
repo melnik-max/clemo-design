@@ -35,10 +35,12 @@
 
 .date--centered {
     @extend .date;
+    margin-top: 5rem;
     text-align: center;
 }
 
 .article-heading {
+    @extend .centered-sm-down;
     color: black;
     font-weight: $article-heading-font-weight;
     font-size: 4.5rem;

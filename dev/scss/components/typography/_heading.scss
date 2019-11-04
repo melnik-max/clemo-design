@@ -26,6 +26,11 @@
     color: black;
 }
 
+.heading--shifted {
+    @extend .heading;
+    margin-top: 5rem;
+}
+
 .heading--bold {
     font-size: 4.6rem;
     font-weight: $article-heading-font-weight;
