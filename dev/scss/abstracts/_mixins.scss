@@ -1,6 +1,6 @@
 @mixin themify($contactThemes) {
     @each $theme, $map in $contactThemes {
-        .contact--#{$theme} & {
+        .section--#{$theme} & {
             $theme-map: () !global;
             @each $key, $submap in $map {
                 $value: map-get(map-get($contactThemes, $theme), '#{$key}');

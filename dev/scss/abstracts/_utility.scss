@@ -26,3 +26,9 @@
 .align-right {
     justify-content: flex-end;
 }
+
+.centered-sm-down {
+    @media #{$breakpoint-sm-down} {
+        text-align: center;
+    }
+}

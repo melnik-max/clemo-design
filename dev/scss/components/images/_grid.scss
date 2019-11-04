@@ -49,7 +49,7 @@
         top: 45%;
     }
 
-    &__header {
+    &__heading {
         font-size: 4rem;
         font-weight: 700;
         line-height: 4rem;
@@ -74,7 +74,7 @@
 
 @media (min-width: 576px) and #{$breakpoint-lg-down} {
     .overlay {
-        &__header {
+        &__heading {
             font-size: 2.8rem;
             line-height: 3rem;
         }

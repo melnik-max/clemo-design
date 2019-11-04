@@ -20,6 +20,7 @@
 }
 
 .heading--sm {
+    @extend .centered-sm-down;
     line-height: 4.1rem;
     font-size: 3rem;
     color: black;
@@ -27,7 +28,7 @@
 
 .heading--bold {
     font-size: 4.6rem;
-    font-weight: $article-header-font-weight;
+    font-weight: $article-heading-font-weight;
 }
 
 @media #{$breakpoint-lg-down} {
