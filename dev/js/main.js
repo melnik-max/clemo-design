@@ -83,7 +83,7 @@
   }
 
   // Need this to avoid very much copy-paste in HTML
-  $('#contact-form-light #contact-header').html('contact')
+  $('#contact-form-light #contact-heading').html('contact')
   $('#contact-form-light #mail').attr('src', 'img/mail-black.png')
   $('#contact-form-light #geo').attr('src', 'img/geo-black.png')
   $('#contact-form-light #phone').attr('src', 'img/phone-black.png')

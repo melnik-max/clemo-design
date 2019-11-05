@@ -4,21 +4,8 @@
         @include make-col(12);
     }
 
+    padding-top: 5rem;
     text-align: center;
-}
-
-.section--centered {
-    @include make-row();
-    justify-content: center;
-}
-
-.section--right {
-    justify-content: flex-end;
-}
-
-.section--left {
-    @extend .section;
-    text-align: left;
 }
 
 .section--dark {
@@ -26,4 +13,10 @@
     background-color: $beige;
     padding-top: 5rem;
     padding-bottom: 9rem;
+}
+
+.section--left {
+    @extend .section;
+    margin-top: 2rem;
+    text-align: left;
 }

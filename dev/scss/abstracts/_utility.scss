@@ -9,7 +9,6 @@
     }
 }
 
-
 .hidden {
     display: none;
 }
@@ -19,12 +18,17 @@
     margin-top: 5rem;
 }
 
-.gutters {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+.row--centered {
+    @include make-row();
+    justify-content: center;
 }
 
-.margin-gutters {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+.align-right {
+    justify-content: flex-end;
+}
+
+.centered-sm-down {
+    @media #{$breakpoint-sm-down} {
+        text-align: center;
+    }
 }

@@ -18,3 +18,13 @@
     @extend .line;
     margin-top: $spacing-xs;
 }
+
+.line--responsive {
+    @extend .line;
+    float: left;
+
+    @media #{$breakpoint-sm-down} {
+        margin-top: $spacing-xs;
+        float: none;
+    }
+}

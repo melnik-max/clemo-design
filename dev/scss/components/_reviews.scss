@@ -64,9 +64,7 @@
     .testimonial__img {
         margin-bottom: 2.5rem;
     }
-}
 
-@media #{$breakpoint-sm-down} {
     .cite * {
         float: left;
         text-align: left;
@@ -86,12 +84,6 @@
 
         &__images {
             text-align: center;
-        }
-    }
-
-    .cite {
-        &__line, &__position {
-            float: left;
         }
     }
 }

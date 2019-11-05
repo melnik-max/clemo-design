@@ -1,4 +1,9 @@
 .article {
+    @include make-col-ready();
+    @include media-breakpoint-up(sm) {
+        @include make-col(8);
+    }
+
     &__text {
         margin-left: 3rem;
     }
@@ -15,14 +20,6 @@
         font-size: 4.8rem;
     }
 
-    &__social {
-        margin-top: -1rem;
-        .fa {
-            margin-top: 8.8rem;
-            margin-right: 1rem;
-        }
-    }
-
     &__image {
         @extend .img--fluid;
         margin-top: 7rem;
@@ -36,14 +33,16 @@
     margin-bottom: 2.4rem;
 }
 
-.date--center {
+.date--centered {
     @extend .date;
+    margin-top: 5rem;
     text-align: center;
 }
 
 .article-heading {
+    @extend .centered-sm-down;
     color: black;
-    font-weight: $article-header-font-weight;
+    font-weight: $article-heading-font-weight;
     font-size: 4.5rem;
     margin-bottom: 2rem;
     a:hover {
@@ -52,9 +51,6 @@
     }
 }
 
-.article--shifted > * {
-    margin-left: -3rem;
-}
 
 @media #{$breakpoint-sm-down} {
     .article-heading {
@@ -74,12 +70,6 @@
         &__heading {
             font-size: 3.5rem;
         }
-    }
-}
-
-@media #{$breakpoint-md-up} {
-    .article--shifted > * {
-        margin-left: 1.5rem;
     }
 }
 

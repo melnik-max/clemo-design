@@ -1,6 +1,6 @@
 $contactThemes: (
-        'dark': (
-                headerMarginTop: 7.5rem,
+        'black': (
+                headingMarginTop: 7.5rem,
 
                 textColor: white,
                 bgColor: black,
@@ -11,7 +11,7 @@ $contactThemes: (
                 messageBtnColor: $orange,
         ),
         'light': (
-                headerMarginTop: -2.5rem,
+                headingMarginTop: -2.5rem,
 
                 hoverColor: $btn-hover-color,
                 btnColor: black,

@@ -6,13 +6,12 @@
 
     margin-top: 1rem;
     margin-bottom: $spacing-sm;
-    margin-left: 0.1rem;
 
-    &__header {
+    &__heading {
         line-height: 3.7rem;
         margin-top: 4.2rem;
         font-size: 3.6rem;
-        font-weight: $article-header-font-weight;
+        font-weight: $article-heading-font-weight;
     }
 
     &__footer {

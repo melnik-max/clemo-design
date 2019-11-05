@@ -15,7 +15,8 @@
     float: right;
 }
 
-.carousel-vertical__dots {
+.carousel__dots--vertical {
+    @extend .d-none, .d-sm-block;
     margin-top: -30rem;
     float: right;
     .active {

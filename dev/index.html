@@ -9,43 +9,38 @@
 
 <div class="container">
     <div class="row">
-        <main class="col-sm-12">
 
-            <section id="jumbotron-carousel" class="hero-carousel carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    //= partials/carousel/hero.html
-                    //= partials/carousel/hero.html
-                    //= partials/carousel/hero.html
-                </div>
+        <section id="jumbotron-carousel" class="section carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                //= partials/carousel/hero.html
+                //= partials/carousel/hero.html
+                //= partials/carousel/hero.html
+            </div>
 
-                <div class="carousel-vertical__dots carousel-indicators d-none d-sm-block">
-                    <span class="dot active" data-target="#jumbotron-carousel" data-slide-to="0"></span>
-                    <span class="dot"        data-target="#jumbotron-carousel" data-slide-to="1"></span>
-                    <span class="dot"        data-target="#jumbotron-carousel" data-slide-to="2"></span>
-                </div>
-            </section>
+            <div class="carousel__dots--vertical carousel-indicators">
+                <span class="dot active" data-target="#jumbotron-carousel" data-slide-to="0"></span>
+                <span class="dot"        data-target="#jumbotron-carousel" data-slide-to="1"></span>
+                <span class="dot"        data-target="#jumbotron-carousel" data-slide-to="2"></span>
+            </div>
+        </section>
 
-            <section class="section">
-                <h1 class="heading--shifted">what we do?</h1>
-                //= partials/articles/services.html
-            </section>
+        <section class="section--left">
+            <h1 class="heading--black">what we do?</h1>
+            //= partials/articles/services.html
+        </section>
 
-            <div class="spacer"></div>
+        <section class="section">
+            <h2 class="heading--black">our best work</h2>
 
-            <section class="section">
-                <h2 class="heading--shifted">our best work</h2>
+            <div class="mx-0 row mt-5">
+                //= partials/images-grid.html
+            </div>
 
-                <div class="mx-0 row">
-                    //= partials/images-grid.html
-                </div>
+            <div class="inline-centered">
+                <a href="works.html" class="btn--black">learn more</a>
+            </div>
+        </section>
 
-                <div class="inline-centered">
-                    <a href="works.html" class="btn--black">learn more</a>
-                </div>
-
-            </section>
-
-        </main><!-- /.col-sm-12 -->
     </div><!-- /.row -->
 </div><!-- /.container -->
 
@@ -53,7 +48,7 @@
 
 //= partials/reviews.html
 
-<section class="contact--dark">
+<section class="section--black">
     //= partials/contact-form.html
 </section>
 

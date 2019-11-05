@@ -4,3 +4,17 @@
     width: 100vw;
     max-width: 100%;
 }
+
+.separator--shifted-top {
+    @extend .separator;
+    margin-top: 7rem;
+}
+
+.separator--shifted-bot {
+    @extend .separator;
+    margin-bottom: 7rem;
+}
+
+.separator--shifted {
+    @extend .separator, .separator--shifted-bot, .separator--shifted-top;
+}
